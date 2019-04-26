@@ -208,6 +208,21 @@ nav.container a:hover {
     justify-content: space-between;
 }
 
+.product {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0 5px;
+    margin-top: 10px;
+    border-top: 1px dashed black;
+}
+
+.product img {
+    width: 280px;
+    margin-right: 20px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -220,7 +235,7 @@ nav.container a:hover {
     padding-bottom: 15px;
 }
 
-.card button {
+button {
     margin: 15px 0;
     width: 32%;
     height: 32px;
@@ -229,7 +244,11 @@ nav.container a:hover {
     border-radius: 8px;
 }
 
-.card button:hover {
+.product button {
+    margin-left: 20px;
+}
+
+button:hover {
     background: black;
     color: white;
 }
@@ -254,6 +273,11 @@ nav.container a:hover {
     align-content: flex-start;
     padding: 20px;
     margin-bottom: 15px;
+}
+
+.text-container.bordered {
+    margin: 10px;
+    border-top: 1px dashed black;
 }
 
 footer {
