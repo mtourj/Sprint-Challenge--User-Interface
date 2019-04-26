@@ -229,6 +229,11 @@ nav.container a:hover {
     border-radius: 8px;
 }
 
+.card button:hover {
+    background: black;
+    color: white;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
