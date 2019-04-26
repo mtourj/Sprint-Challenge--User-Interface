@@ -235,8 +235,81 @@ nav.container a:hover {
     padding-bottom: 15px;
 }
 
-button {
+.card button {
     margin: 15px 0;
+}
+
+form {
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+field {
+    width: 49%;
+    display: flex;
+    align-items: center;
+}
+
+field input {
+    
+    border-radius: 5px;
+    padding: 2px;
+    width: 59%;
+}
+
+field input:focus {
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+field label {
+    width: 40%;
+}
+
+.form-row.messageRow {
+    margin-top: 10px;
+    height: 80px;
+}
+
+.form-row.messageRow .submitButton {
+    width: 49%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#messageField {
+    display: flex;
+    height: 80px;
+    align-items: stretch;
+}
+
+field#messageField textarea {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    width: 59%;
+    padding: 5px;
+    word-wrap: normal;
+    resize: none;
+    height: 80px;
+}
+
+field#messageField textarea:focus {
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
     width: 32%;
     height: 32px;
     background: white;
