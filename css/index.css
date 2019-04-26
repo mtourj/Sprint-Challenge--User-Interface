@@ -71,12 +71,26 @@ p {
     margin: 0 auto;
 }
 
+.container .about-page {
+    display: flex;
+    /*nothing here yet! */
+}
+
+.header {
+    display: felx;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
 nav.container {
+    
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 40px;
     align-items: flex-end;
+    padding-right: 25px;
 }
 
 nav.container a {
@@ -87,6 +101,16 @@ nav.container a {
 nav.container a:hover {
     color: darkslategray;
     text-decoration: underline;
+}
+
+.top-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.top-image img {
+    min-width: 800px;
+    height: 153px;
 }
 
 .top-content {
@@ -122,12 +146,87 @@ nav.container a:hover {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box0 {
+    background: teal;
+}
+
+.box1 {
+    background: gold;
+}
+
+.box2 {
+    background: cadetblue;
+}
+
+.box3 {
+    background: coral;
+}
+
+.box4 {
+    background: crimson;
+}
+
+.box5 {
+    background: forestgreen;
+}
+
+.box6 {
+    background: darkorchid;
+}
+
+.box7 {
+    background: hotpink;
+}
+
+.box8 {
+    background: indigo;
+}
+
+.box9 {
+    background: dodgerblue;
+}
+
+.topCards {
+    margin-top: 15px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed black;
+}
+
+.bottomCards {
+    margin-top: 15px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed black;
+    width: 48%;
+    margin: 25px 15px;
+}
+
+.card img {
+    padding-bottom: 15px;
+}
+
+.card button {
+    margin: 15px 0;
+    width: 32%;
+    height: 32px;
+    background: white;
+    border: 1.4px solid black;
+    border-radius: 8px;
 }
 
 .bottom-content {
@@ -142,6 +241,14 @@ nav.container a:hover {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.text-container.padded {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px;
+    margin-bottom: 15px;
 }
 
 footer {
