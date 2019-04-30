@@ -71,6 +71,48 @@ p {
     margin: 0 auto;
 }
 
+.container .about-page {
+    display: flex;
+    /*nothing here yet! */
+}
+
+.header {
+    display: felx;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+nav.container {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-items: flex-end;
+    padding-right: 25px;
+}
+
+nav.container a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.container a:hover {
+    color: darkslategray;
+    text-decoration: underline;
+}
+
+.top-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.top-image img {
+    min-width: 800px;
+    height: 153px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -104,12 +146,184 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box0 {
+    background: teal;
+}
+
+.box1 {
+    background: gold;
+}
+
+.box2 {
+    background: cadetblue;
+}
+
+.box3 {
+    background: coral;
+}
+
+.box4 {
+    background: crimson;
+}
+
+.box5 {
+    background: forestgreen;
+}
+
+.box6 {
+    background: darkorchid;
+}
+
+.box7 {
+    background: hotpink;
+}
+
+.box8 {
+    background: indigo;
+}
+
+.box9 {
+    background: dodgerblue;
+}
+
+.topCards {
+    margin-top: 15px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed black;
+}
+
+.bottomCards {
+    margin-top: 15px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0 5px;
+    margin-top: 10px;
+    border-top: 1px dashed black;
+}
+
+.product img {
+    width: 280px;
+    margin-right: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed black;
+    width: 48%;
+    margin: 25px 15px;
+}
+
+.card img {
+    padding-bottom: 15px;
+}
+
+.card button {
+    margin: 15px 0;
+}
+
+form {
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+field {
+    width: 49%;
+    display: flex;
+    align-items: center;
+}
+
+field input {
+    
+    border-radius: 5px;
+    padding: 2px;
+    width: 59%;
+}
+
+field input:focus {
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+field label {
+    width: 40%;
+}
+
+.form-row.messageRow {
+    margin-top: 10px;
+    height: 80px;
+}
+
+.form-row.messageRow .submitButton {
+    width: 49%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#messageField {
+    display: flex;
+    height: 80px;
+    align-items: stretch;
+}
+
+field#messageField textarea {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    width: 59%;
+    padding: 5px;
+    word-wrap: normal;
+    resize: none;
+    height: 80px;
+}
+
+field#messageField textarea:focus {
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 32%;
+    height: 32px;
+    background: white;
+    border: 1.4px solid black;
+    border-radius: 8px;
+}
+
+.product button {
+    margin-left: 20px;
+}
+
+button:hover {
+    background: black;
+    color: white;
 }
 
 .bottom-content {
@@ -124,6 +338,19 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.text-container.padded {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.text-container.bordered {
+    margin: 10px;
+    border-top: 1px dashed black;
 }
 
 footer {
